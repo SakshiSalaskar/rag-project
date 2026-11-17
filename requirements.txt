@@ -75,6 +75,7 @@ networkx==3.7
 notebook==7.6.5
 notebook_shim==0.2.4
 numpy==2.5.5
+ollama==0.6.3
 onnxruntime==1.32.0
 packaging==26.3
 pandocfilters==1.5.1
