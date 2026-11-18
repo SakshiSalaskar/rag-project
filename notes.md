@@ -41,3 +41,8 @@ Document Q&A (RAG) over PDFs. Local embeddings + FAISS + local LLM via Ollama.
 - Compare retrieval: embeddings only vs hybrid vs hybrid + reranker
 - Compare models: qwen2.5:1.5b vs a hosted model
 - Streamlit app with source cards
+
+## Day 3: Refactor
+- code now lives in src/ (ingest.py, retriever.py, rag.py) with a Streamlit UI
+- 5-question UI test: 3 correct, 1 vague, 1 failed (“why” question copied an irrelevant fragment)
+- Idea: refuse when the top retrieval score is under a threshold instead of relying on the model
